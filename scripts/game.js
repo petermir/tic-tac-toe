@@ -82,7 +82,7 @@ function checkForGameOver() {
     if (
       gameData[i][0] > 0 &&
       gameData[i][0] === gameData[i][1] &&
-      (gameData[i][1] === gameData[i][2]) === 1
+      gameData[i][1] === gameData[i][2] === 1
     ) {
       return gameData[i][0];
     }
@@ -94,7 +94,7 @@ function checkForGameOver() {
     if (
       gameData[0][i] > 0 &&
       gameData[0][i] === gameData[1][i] &&
-      (gameData[0][i] === gameData[2][i]) === 1
+      gameData[0][i] === gameData[2][i] === 1
     ) {
       return gameData[1][0];
     }
