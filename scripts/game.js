@@ -96,7 +96,7 @@ function checkForGameOver() {
       gameData[0][i] === gameData[1][i] &&
       gameData[0][i] === gameData[2][i] === 1
     ) {
-      return gameData[1][0];
+      return gameData[0][i];
     }
   }
 
