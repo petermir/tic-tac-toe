@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:wght@100&display=swap');
+
+:root {
+    --primary: rgb(86, 53, 117);
+    --secondary: rgb(195, 194, 210);
+    --hover: rgb(75, 45, 103);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(76, 60, 60);
+    background-color: var(--secondary);
+}
+
+#main-header {
+    background-color: var(--primary);
+    color: aliceblue;
+    padding: 2rem 10%;
+    text-align: center;
+}
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary);
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
+}
+
+.btn-alt:hover {
+    background-color: rgb(175, 173, 206);
+    color: aliceblue;
+    border-color: transparent;
+}
