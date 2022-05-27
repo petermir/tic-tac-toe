@@ -65,7 +65,7 @@ function selectGameField(event) {
   gameData[selectedRow][selectedColumn] = activePlayer + 1;
 
   const winnerId = checkForGameOver();
-  //console.log(winnerId)
+  console.log(winnerId)
 
   if (winnerId !== 0) {
     endGame(winnerId);
@@ -82,7 +82,7 @@ function checkForGameOver() {
     if (
       gameData[i][0] > 0 &&
       gameData[i][0] === gameData[i][1] &&
-      gameData[i][1] === gameData[i][2] === 1
+      gameData[i][1] === gameData[i][2]
     ) {
       return gameData[i][0];
     }
@@ -94,7 +94,7 @@ function checkForGameOver() {
     if (
       gameData[0][i] > 0 &&
       gameData[0][i] === gameData[1][i] &&
-      gameData[0][i] === gameData[2][i] === 1
+      gameData[0][i] === gameData[2][i]
     ) {
       return gameData[0][i];
     }
